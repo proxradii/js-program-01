@@ -22,8 +22,6 @@ while (amount < bank_balance) {
     }
 }
 
-phonePrice();
-
 function calculateTax(amount) {
 	return amount * tax_rate;
 }
@@ -32,5 +30,6 @@ function formatAmount(amount) {
 	return "$" + amount.toFixed( 2 );
 }
 
+phonePrice();
 amount = amount + calculateTax( amount );
 console.log("Your purchase: " + formatAmount( amount ));
